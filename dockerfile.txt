@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8080
+ADD target/hello-world-1.0.jar hello-world-1.0.jar
+ENTRYPOINT ["java","-jar","/hello-world-1.0.jar"]
